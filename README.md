@@ -1,3 +1,3 @@
 This project is a workflow aid that assists by highlighting points of interest on the webpage for quicker assessment of Offsite violations.
 
-Written for Google Chrome, this project aims to increase efficiency for those who work in the Offsite queue.
+Written for Google Chrome, this project aims to increase efficiency for those who work in the Offsite queue. This extension will aid in removing offsite flags from the queue by: highlighting flagged text in the message area, check for allowlist users, enable keyboard shortcuts.
