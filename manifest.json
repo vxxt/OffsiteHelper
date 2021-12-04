@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+
+  "name": "OffsiteHelper",
+  "description": "This extension will aid in removing offsite flags from the queue by: highlighting flagged text in the message area, check for allowlist users, enable keyboard shortcuts",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "icons": {
+    "16":"./icon.png"
+  },
+  "commands": {
+    "_execute_x" : {
+      "suggested_key" : {
+        "default" : "Ctrl+X",
+        "mac" : "MacCtrl+X"
+      },
+      "description" : "Do Nothing"
+    }
+  },
+  "x" : {},
+  "background": {
+   "service_worker": "background.js",
+   "scripts": ["./background.js"],
+   "persistent": false
+  },
+  "permissions": [
+   "activeTab",
+   "storage",
+   "tabs",
+   "https://www.google.com/*",
+   "https://www.grailed.com/internal/flags/conversation_flags"
+   ]
+}
